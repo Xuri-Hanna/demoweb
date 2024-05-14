@@ -1,7 +1,7 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
+$servername = "xoaserver.mysql.database.azure.com";
+$username = "sqladmin";
+$password = "#Nqthlr123";
 $dbname = "ban_hang";
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
