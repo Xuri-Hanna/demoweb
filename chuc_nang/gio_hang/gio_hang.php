@@ -1,6 +1,6 @@
     <?php
     // Thêm đoạn mã khởi tạo kết nối MySQLi vào đây
-    $servername = "thumottiserver.mysql.database.azure.com";
+    $servername = "xoaserver.mysql.database.azure.com";
     $username = "sqladmin";
     $password = "#Nqthlr123";
     $database = "ban_hang";
