@@ -1,5 +1,5 @@
 <?php
-$servername = "thumottiserver.mysql.database.azure.com";
+$servername = "xoaserver.mysql.database.azure.com";
 $username = "sqladmin";
 $password = "#";
 $dbname = "ban_hang";
