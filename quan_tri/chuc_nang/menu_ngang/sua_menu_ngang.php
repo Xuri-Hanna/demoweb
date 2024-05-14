@@ -6,7 +6,7 @@ if (!isset($bien_bao_mat)) {
 
 <?php
 $id = $_GET['id'];
-$conn = new mysqli("localhost", "root", "", "ban_hang");
+$conn = new mysqli("xoaserver.mysql.database.azure.com", "sqladmin", "#Nqthlr123", "ban_hang");
 
 if ($conn->connect_error) {
     die("Kết nối không thành công: " . $conn->connect_error);
