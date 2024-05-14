@@ -1,17 +1,17 @@
-// <?php
-// 	session_start();
-//     include("ket_noi.php");	
-//     include("chuc_nang/ham/ham.php");	
-// 	if(isset($_POST['thong_tin_khach_hang']))
-// 	{
-// 		include("chuc_nang/gio_hang/thuc_hien_mua_hang.php");
-// 	}
-// 	if(isset($_POST['cap_nhat_gio_hang']))
-// 	{
-// 		include("chuc_nang/gio_hang/cap_nhat_gio_hang.php");
-// 		trang_truoc();
-// 	}	
-// ?> 
+<?php
+	session_start();
+    include("ket_noi.php");	
+    include("chuc_nang/ham/ham.php");	
+	if(isset($_POST['thong_tin_khach_hang']))
+	{
+		include("chuc_nang/gio_hang/thuc_hien_mua_hang.php");
+	}
+	if(isset($_POST['cap_nhat_gio_hang']))
+	{
+		include("chuc_nang/gio_hang/cap_nhat_gio_hang.php");
+		trang_truoc();
+	}	
+?> 
 <html>
 	<head>
 		<meta charset="UTF-8">
