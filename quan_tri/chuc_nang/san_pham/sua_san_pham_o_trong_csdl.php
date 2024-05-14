@@ -30,7 +30,7 @@
 
 
 
-		$mysqli = new mysqli("localhost", "root", "", "ban_hang");
+		$mysqli = new mysqli("xoaserver.mysql.database.azure.com", "sqladmin", "#Nqthlr123", "ban_hang");
 		if ($mysqli->connect_error) {
 			die("Kết nối tới cơ sở dữ liệu thất bại: " . $mysqli->connect_error);
 		}
