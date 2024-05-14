@@ -1,8 +1,8 @@
     <?php
     // Thêm đoạn mã khởi tạo kết nối MySQLi vào đây
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
+    $servername = "thumottiserver.mysql.database.azure.com";
+    $username = "sqladmin";
+    $password = "#Nqthlr123";
     $database = "ban_hang";
 
     $conn = mysqli_connect($servername, $username, $password, $database);
