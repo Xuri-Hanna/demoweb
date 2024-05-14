@@ -14,9 +14,9 @@ if (isset($_SESSION['id_them_vao_gio'])) {
             $hang_duoc_mua .= $_SESSION['id_them_vao_gio'][$i] . "[|||]" . $_SESSION['sl_them_vao_gio'][$i] . "[|||||]";
         }
 
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
+        $servername = "thumottiserver.mysql.database.azure.com";
+        $username = "sqladmin";
+        $password = "#Nqthlr123";
         $dbname = "ban_hang";
 
         $conn = new mysqli($servername, $username, $password, $dbname);
