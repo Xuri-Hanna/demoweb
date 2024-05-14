@@ -5,7 +5,7 @@
 	$so_dong_tren_mot_trang=20;
 	if(!isset($_GET['trang'])){$_GET['trang']=1;}
 	
-	$mysqli = new mysqli("localhost", "root", "", "ban_hang");
+	$mysqli = new mysqli("xoaserver.mysql.database.azure.com", "sqladmin", "12345", "ban_hang");
 	if ($mysqli->connect_errno) {
 	    echo "Không kết nối được đến MySQL: " . $mysqli->connect_error;
 	    exit();
