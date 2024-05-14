@@ -1,14 +1,15 @@
 <?php 
+	$conn = new mysqli("xoaserver.mysql.database.azure.com", "sqladmin", "#Nqthlr123", "ban_hang");
 	$so_du_lieu=15;
 	$tv="SELECT COUNT(*) FROM san_pham";
-	$tv_1=mysqli_query($connection, $tv); // Thay $connection bằng biến kết nối cơ sở dữ liệu của bạn
+	$tv_1=mysqli_query($conn, $tv); // Thay $connection bằng biến kết nối cơ sở dữ liệu của bạn
 	$tv_2=mysqli_fetch_array($tv_1);
 	$so_trang=ceil($tv_2[0]/$so_du_lieu);
 	
 	if(!isset($_GET['trang'])){$vtbd=0;}else{$vtbd=($_GET['trang']-1)*$so_du_lieu;}
 	
 	$tv="SELECT id, ten, gia, hinh_anh, thuoc_menu FROM san_pham ORDER BY id DESC LIMIT $vtbd,$so_du_lieu";
-	$tv_1=mysqli_query($connection, $tv); // Thay $connection bằng biến kết nối cơ sở dữ liệu của bạn
+	$tv_1=mysqli_query($conn, $tv); // Thay $connection bằng biến kết nối cơ sở dữ liệu của bạn
 	echo "<table>";
 	while($tv_2=mysqli_fetch_array($tv_1))
 	{
