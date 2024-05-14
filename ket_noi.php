@@ -1,7 +1,7 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
+$servername = "thumottiserver.mysql.database.azure.com";
+$username = "sqladmin";
+$password = "#";
 $dbname = "ban_hang";
 
 // Tạo kết nối
