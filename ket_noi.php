@@ -1,7 +1,7 @@
 <?php
 $servername = "xoaserver.mysql.database.azure.com";
 $username = "sqladmin";
-$password = "#";
+$password = "#Nqthlr123";
 $dbname = "ban_hang";
 
 // Tạo kết nối
