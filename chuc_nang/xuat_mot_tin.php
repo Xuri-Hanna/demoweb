@@ -2,9 +2,9 @@
 $id = $_GET['id'];
 
 // Thực hiện kết nối tới cơ sở dữ liệu
-$servername = "localhost";
-$username = "root";
-$password = "";
+$servername = "thumottiserver.mysql.database.azure.com";
+$username = "sqladmin";
+$password = "#Nqthlr123";
 $dbname = "ban_hang";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
