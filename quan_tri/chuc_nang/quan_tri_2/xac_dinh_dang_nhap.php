@@ -43,42 +43,14 @@ function trang_truoc_abc()
 
 if(isset($_POST['dang_nhap_quan_tri']))
 {
-    $mysqli = new mysqli("localhost", "root", "", "ban_hang");
+    $mysqli = new mysqli("xoaserver.mysql.database.azure.com", "sqladmin", "#Nqthlr123", "ban_hang");
     if ($mysqli->connect_errno) {
         echo "Không kết nối được đến MySQL: " . $mysqli->connect_error;
         exit();
     }
 
     $ky_danh = $_POST['ky_danh'];
-    $ky_danh = str_replace("'","",$ky_danh);
-    $ky_danh = str_replace('"',"",$ky_danh);
-
-    $mat_khau = ($_POST['mat_khau']);
-    $mat_khau = ($mat_khau);
-
-    $tv = "SELECT COUNT(*) FROM thong_tin_quan_tri WHERE ky_danh='$ky_danh' AND mat_khau='$mat_khau'";
-    $result = $mysqli->query($tv);
-    $tv_2 = $result->fetch_array();
-    if($tv_2[0] == 1)
-    {
-        $_SESSION['ky_danh'] = $ky_danh;
-        $_SESSION['mat_khau'] = $mat_khau;
-    }
-    else
-    {
-        thong_bao_abc("Thông tin nhập vào không đúng");
-    }
-
-    $mysqli->close();
-    trang_truoc_abc();
-}
-
-if(isset($_SESSION['ky_danh']))
-{
-    $ky_danh = $_SESSION['ky_danh'];
-    $mat_khau = $_SESSION['mat_khau'];
-
-    $mysqli = new mysqli("localhost", "root", "", "ban_hang");
+    $ky_danh = str_replace("'","",$Nqthlr123", "ban_hang");
     if ($mysqli->connect_errno) {
         echo "Không kết nối được đến MySQL: " . $mysqli->connect_error;
         exit();
