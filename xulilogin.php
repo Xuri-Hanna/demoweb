@@ -5,7 +5,7 @@
 		header("location:index.php");
 	}
 	else{
-		$mysqli = new mysqli("thumottiserver.mysql.database.azure.com", "sqladmin", "#Nqthlr123", "ban_hang");
+		$mysqli = new mysqli("xoaserver.mysql.database.azure.com", "sqladmin", "#Nqthlr123", "ban_hang");
 		if ($mysqli->connect_errno) {
 			echo "Không kết nối được đến MySQL: " . $mysqli->connect_error;
 			exit();
