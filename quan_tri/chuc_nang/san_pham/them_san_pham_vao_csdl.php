@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
         if ($ten != "" && $ten_file_anh != "") {
             // Kết nối đến cơ sở dữ liệu
-            $conn = mysqli_connect("localhost", "root", "", "ban_hang");
+            $conn = mysqli_connect("xoaserver.mysql.database.azure.com", "sqladmin", "#Nqthlr123", "ban_hang");
             if (!$conn) {
                 die("Lỗi kết nối: " . mysqli_connect_error());
             }
