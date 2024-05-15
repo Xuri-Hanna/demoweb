@@ -43,7 +43,7 @@
 			Quản trị viên :
 		</td>
 		<td>
-			Giang Nguyễn
+			Hương Trần
 		</td>
 	</tr>
 	<tr>
