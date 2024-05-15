@@ -9,7 +9,7 @@ if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
     // Thực hiện tạo kết nối MySQLi và thực thi truy vấn DELETE tại đây
-    $conn = new mysqli("localhost", "root", "", "ban_hang");
+    $conn = new mysqli("xoaserver.mysql.database.azure.com", "sqladmin", "#Nqthlr123", "ban_hang");
 
     // Kiểm tra kết nối
     if ($conn->connect_error) {
